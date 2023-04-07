@@ -4,5 +4,7 @@ const person = {
 	  street: "Lalaland 12"
 	}
   };
- 
-delete person.address.street;
+
+  const {name,address:{street}} = person;
+
+  console.log(street);
